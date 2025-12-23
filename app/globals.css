@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Bloom Insurance Theme - Light Mode */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+
+    /* Primary: Bloom Cyan (#00ADEE) */
+    --primary: 196 100% 46%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary: Bloom Blue (#1B75BB) */
+    --secondary: 207 75% 42%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Destructive: Bloom Red (#D02E2E) - errors only */
+    --destructive: 4 90% 58%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Muted: Pale Aqua (#F2F7F6) */
+    --muted: 162 33% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Accent: Bloom Green (#37A526) */
+    --accent: 111 60% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Card: White */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    /* Borders & Inputs (#E1E8ED) */
+    --border: 210 25% 91%;
+    --input: 210 25% 91%;
+
+    /* Ring: Bloom Cyan for focus states */
+    --ring: 196 100% 46%;
+
+    /* Border radius */
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-bloom-paleAqua font-sans text-foreground;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  /* Bloom Insurance Card Pattern */
+  .bloom-card {
+    @apply bg-white rounded-lg shadow-sm border-l-4 border-bloom-cyan p-6;
+  }
+
+  /* Professional button styles */
+  .btn-bloom-primary {
+    @apply bg-bloom-cyan hover:bg-bloom-cyan/90 text-white font-medium px-4 py-2 rounded-md transition-colors;
+  }
+
+  .btn-bloom-secondary {
+    @apply bg-bloom-blue hover:bg-bloom-blue/90 text-white font-medium px-4 py-2 rounded-md transition-colors;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

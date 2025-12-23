@@ -1,0 +1,7 @@
+{
+  "/(customer)/dashboard/page": "app/(customer)/dashboard/page.js",
+  "/(customer)/services/page": "app/(customer)/services/page.js",
+  "/(admin)/domains/page": "app/(admin)/domains/page.js",
+  "/(customer)/services/[serviceId]/configure/page": "app/(customer)/services/[serviceId]/configure/page.js",
+  "/(admin)/domains/[domainId]/page": "app/(admin)/domains/[domainId]/page.js"
+}
